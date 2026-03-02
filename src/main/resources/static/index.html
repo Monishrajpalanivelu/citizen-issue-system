@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart City - Citizen Issue System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --bg-color: #f8fafc;
+            --text-color: #0f172a;
+            --card-bg: #ffffff;
+            --border-color: #e2e8f0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        header p {
+            margin-top: 0.5rem;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        main {
+            flex: 1;
+            max-width: 800px;
+            margin: 3rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 2.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border-color);
+            text-align: center;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h2 {
+            margin-top: 0;
+            font-size: 1.8rem;
+            color: var(--text-color);
+        }
+
+        .card p {
+            color: #475569;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2.5rem;
+            text-align: left;
+        }
+
+        .feature-item {
+            background: #f1f5f9;
+            padding: 1.2rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary);
+        }
+
+        .feature-item h3 {
+            margin: 0 0 0.5rem 0;
+            font-size: 1.1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: background-color 0.2s ease, transform 0.1s ease;
+        }
+
+        .btn:hover {
+            background-color: var(--primary-hover);
+            transform: scale(1.02);
+        }
+
+        .btn:active {
+            transform: scale(0.98);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            color: #64748b;
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border-color);
+            background-color: var(--card-bg);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Smart City Issues</h1>
+        <p>A Hackathon Project for Modern Citizen Issue Tracking</p>
+    </header>
+
+    <main>
+        <div class="card">
+            <h2>Backend API & Dashboard</h2>
+            <p>Welcome to the Citizen Issue Processing System. This application provides robust APIs to manage infrastructure complaints, assign departments, and track issue resolution.</p>
+            
+            <div class="features">
+                <div class="feature-item">
+                    <h3>📍 Location-based</h3>
+                    <p style="margin:0; font-size:0.95rem;">Track issues by GPS and District</p>
+                </div>
+                <div class="feature-item">
+                    <h3>🔐 Secure</h3>
+                    <p style="margin:0; font-size:0.95rem;">JWT Authentication & Role Management</p>
+                </div>
+                <div class="feature-item">
+                    <h3>📊 Heatmaps</h3>
+                    <p style="margin:0; font-size:0.95rem;">API endpoints for visual dashboard data</p>
+                </div>
+            </div>
+
+            <a href="/swagger-ui.html" class="btn">View API Documentation &rarr;</a>
+            <p style="margin-top: 1.5rem; font-size: 0.9rem; color: #64748b;">
+                (Use the Swagger Documentation to interact with the backend, register users, and submit issues)
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2026 Smart City Hackathon Team. Built with Spring Boot 3 & PostgreSQL.
+    </footer>
+
+</body>
+</html>
