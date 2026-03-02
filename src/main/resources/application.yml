@@ -8,8 +8,8 @@ spring:
   # ── Database ──────────────────────────────────────────
   datasource:
     url: jdbc:postgresql://localhost:5432/citizen_issues
-    username: postgres
-    password: Monish@postgre
+    username: Your_Postgre_username
+    password: Your_Postgre_Password
     driver-class-name: org.postgresql.Driver
 
   jpa:
