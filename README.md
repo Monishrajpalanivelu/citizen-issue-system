@@ -276,3 +276,19 @@ http://localhost:8080
 ## 📎 Repository
 
 👉 [https://github.com/Monishrajpalanivelu/citizen-issue-system](https://github.com/Monishrajpalanivelu/citizen-issue-system)
+---
+
+## 🤝 Contribution
+
+Contributions are welcome!  
+
+If you'd like to improve this project:
+
+1. Fork the repository  
+2. Create a new branch (`feature-branch`)  
+3. Commit your changes  
+4. Push to your fork  
+5. Open a Pull Request  
+
+---
+
